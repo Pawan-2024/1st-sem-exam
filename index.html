@@ -30,10 +30,17 @@
     <script type="text/javascript">
             
         function updateTask(){
+            let input=document.getElementById("userTxt").value;
+            if(input.value==="WakeUp early at morning"){
+
+            
+            document.getElementById("btnRegister").textContent = "Delete";
+            document.getElementById("btnRegister").className = "btn btn-danger";
+        }else if(input.value==="Do yoga in 30min"){
             document.getElementById("btnRegister").textContent = "Delete";
             document.getElementById("btnRegister").className = "btn btn-danger";
         }
-        
+    }
     </script>
 </body>
 </html>
